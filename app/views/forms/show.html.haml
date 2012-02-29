@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @form.user_id
+%p
+  %b String:
+  = @form.string
+%p
+  %b Date:
+  = @form.date
+
+= link_to 'Edit', edit_form_path(@form)
+\|
+= link_to 'Back', forms_path

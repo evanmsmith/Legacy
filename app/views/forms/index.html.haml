@@ -1,0 +1,24 @@
+%h1 Listing forms
+
+%table{:class => "table table-striped"}
+  %thead
+    %tr
+      %th User
+      %th String
+      %th Date
+      %th
+      %th
+      %th
+  %tbody
+    - @forms.each do |form|
+      %tr
+        %td= form.user_id
+        %td= form.string
+        %td= form.date
+        %td= link_to 'Show', form
+        %td= link_to 'Edit', edit_form_path(form)
+        %td= link_to 'Destroy', form, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Form', new_form_path
