@@ -1,0 +1,100 @@
+2012-02-29T02:24:42+00:00 app[web.1]: ActionView::Template::Error (Invalid CSS after "h1 ": expected selector or at-rule, was "{"
+2012-02-29T02:24:42+00:00 app[web.1]: 
+2012-02-29T02:24:42+00:00 app[web.1]: 
+2012-02-29T02:24:42+00:00 app[web.1]: 
+2012-02-29T02:24:42+00:00 app[web.1]: 
+2012-02-29T02:24:42+00:00 app[web.1]: Processing by HomeController#index as */*
+2012-02-29T02:24:42+00:00 app[web.1]: Started GET "/" for 136.152.167.213 at 2012-02-29 02:24:42 +0000
+2012-02-29T02:24:42+00:00 app[web.1]: Completed 500 Internal Server Error in 12ms
+2012-02-29T02:24:42+00:00 app[web.1]:     4:   <title>FormPdf</title>
+2012-02-29T02:24:42+00:00 app[web.1]:     5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+2012-02-29T02:24:42+00:00 app[web.1]:     8: </head>
+2012-02-29T02:24:42+00:00 app[web.1]:   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4508842587349907829_33540220'
+2012-02-29T02:24:42+00:00 app[web.1]: cache: [GET /] miss
+2012-02-29T02:24:42+00:00 heroku[router]: GET sharp-fire-6329.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=24ms status=500 bytes=643
+2012-02-29T02:24:42+00:00 app[web.1]: 
+2012-02-29T02:24:42+00:00 app[web.1]: 
+2012-02-29T02:24:42+00:00 app[web.1]: Started GET "/" for 136.152.167.213 at 2012-02-29 02:24:42 +0000
+2012-02-29T02:24:42+00:00 app[web.1]: Processing by HomeController#index as */*
+2012-02-29T02:24:42+00:00 app[web.1]:   Rendered home/index.html.haml within layouts/application (0.1ms)
+2012-02-29T02:24:42+00:00 app[web.1]: Completed 500 Internal Server Error in 10ms
+2012-02-29T02:24:42+00:00 app[web.1]: 
+2012-02-29T02:24:42+00:00 app[web.1]: ActionView::Template::Error (Invalid CSS after "h1 ": expected selector or at-rule, was "{"
+2012-02-29T02:24:42+00:00 app[web.1]:   (in /app/app/assets/stylesheets/application.css)):
+2012-02-29T02:24:42+00:00 app[web.1]:     3: <head>
+2012-02-29T02:24:42+00:00 app[web.1]:     2: <html>
+2012-02-29T02:24:42+00:00 app[web.1]:     4:   <title>FormPdf</title>
+2012-02-29T02:24:42+00:00 app[web.1]:     5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+2012-02-29T02:24:42+00:00 app[web.1]:     7:   <%= csrf_meta_tags %>
+2012-02-29T02:24:42+00:00 app[web.1]:     6:   <%= javascript_include_tag "all" %>
+2012-02-29T02:24:42+00:00 app[web.1]:     8: </head>
+2012-02-29T02:24:42+00:00 app[web.1]:   app/controllers/home_controller.rb:3:in `index'
+2012-02-29T02:24:42+00:00 app[web.1]:   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4508842587349907829_33540220'
+2012-02-29T02:24:42+00:00 app[web.1]: cache: [GET /] miss
+2012-02-29T02:24:42+00:00 app[web.1]: 
+2012-02-29T02:24:42+00:00 app[web.1]: 
+2012-02-29T02:24:42+00:00 heroku[router]: GET sharp-fire-6329.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=20ms status=500 bytes=643
+2012-02-29T02:24:43+00:00 app[web.1]: cache: [GET /favicon.ico] stale, valid, store
+2012-02-29T02:24:43+00:00 heroku[router]: GET sharp-fire-6329.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=671ms status=304 bytes=0
+2012-02-29T02:27:48+00:00 heroku[slugc]: Slug compilation started
+2012-02-29T02:28:29+00:00 heroku[api]: Deploy df8f860 by apchait@gmail.com
+2012-02-29T02:28:29+00:00 heroku[api]: Release v6 created by apchait@gmail.com
+2012-02-29T02:28:30+00:00 heroku[web.1]: State changed from up to bouncing
+2012-02-29T02:28:30+00:00 heroku[web.1]: State changed from bouncing to created
+2012-02-29T02:28:30+00:00 heroku[web.1]: State changed from created to starting
+2012-02-29T02:28:33+00:00 heroku[web.1]: Stopping process with SIGTERM
+2012-02-29T02:28:33+00:00 app[web.1]: [2012-02-29 02:28:33] ERROR SignalException: SIGTERM
+2012-02-29T02:28:33+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-02-29T02:28:36+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 33982`
+2012-02-29T02:28:36+00:00 heroku[slugc]: Slug compilation finished
+2012-02-29T02:28:41+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-02-29T02:28:41+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-02-29T02:28:41+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-02-29T02:28:43+00:00 heroku[web.1]: Error R12 (Exit timeout) -> Process failed to exit within 10 seconds of SIGTERM
+2012-02-29T02:28:43+00:00 heroku[web.1]: Stopping process with SIGKILL
+2012-02-29T02:28:44+00:00 app[web.1]: 
+2012-02-29T02:28:44+00:00 app[web.1]: [DEVISE] Devise.case_insensitive_keys is false which is no longer supported. Recent Devise versions automatically downcase the e-mail before saving it to the database but your app isn't using this feature. You can solve this issue by either:
+2012-02-29T02:28:44+00:00 app[web.1]: 
+2012-02-29T02:28:44+00:00 app[web.1]: 1) Setting config.case_insensitive_keys = [:email] in your Devise initializer and running a migration that will downcase all emails already in the database;
+2012-02-29T02:28:44+00:00 app[web.1]: 
+2012-02-29T02:28:44+00:00 app[web.1]: 2) Setting config.case_insensitive_keys = [] (so nothing will be downcased) and making sure you are not using Devise :validatable (since validatable assumes caseinsensitivity)
+2012-02-29T02:28:44+00:00 app[web.1]: 
+2012-02-29T02:28:44+00:00 app[web.1]: [DEVISE] Devise.use_salt_as_remember_token is false which is no longer supported. Devise now only uses the salt as remember token and the remember_token column can be removed from your models.
+2012-02-29T02:28:44+00:00 app[web.1]: 
+2012-02-29T02:28:44+00:00 app[web.1]: 
+2012-02-29T02:28:44+00:00 app[web.1]: 
+2012-02-29T02:28:44+00:00 app[web.1]: 
+2012-02-29T02:28:44+00:00 app[web.1]: [DEVISE] Devise.reset_password_within is nil. Please set this value to an interval (for example, 6.hours) and add a reset_password_sent_at field to your Devise models (if they don't have one already).
+2012-02-29T02:28:44+00:00 heroku[web.1]: Process exited with status 137
+2012-02-29T02:28:47+00:00 app[web.1]: [2012-02-29 02:28:47] INFO  WEBrick 1.3.1
+2012-02-29T02:28:47+00:00 app[web.1]: [2012-02-29 02:28:47] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-02-29T02:28:47+00:00 app[web.1]: [2012-02-29 02:28:47] INFO  WEBrick::HTTPServer#start: pid=1 port=33982
+2012-02-29T02:28:48+00:00 heroku[web.1]: State changed from starting to up
+2012-02-29T02:28:49+00:00 app[web.1]: => Booting WEBrick
+2012-02-29T02:28:49+00:00 app[web.1]: => Rails 3.2.0 application starting in production on http://0.0.0.0:33982
+2012-02-29T02:28:49+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-02-29T02:28:49+00:00 app[web.1]: Started GET "/" for 136.152.167.213 at 2012-02-29 02:28:49 +0000
+2012-02-29T02:28:49+00:00 app[web.1]: => Call with -d to detach
+2012-02-29T02:28:49+00:00 app[web.1]: 
+2012-02-29T02:28:49+00:00 app[web.1]: 
+2012-02-29T02:28:49+00:00 app[web.1]: Processing by HomeController#index as HTML
+2012-02-29T02:28:49+00:00 app[web.1]:   Rendered home/index.html.haml within layouts/application (0.9ms)
+2012-02-29T02:28:52+00:00 app[web.1]: Completed 500 Internal Server Error in 2424ms
+2012-02-29T02:28:52+00:00 app[web.1]: 
+2012-02-29T02:28:52+00:00 app[web.1]: ActionView::Template::Error (Invalid CSS after " */": expected selector or at-rule, was ".clearfix{*zoom..."
+2012-02-29T02:28:52+00:00 app[web.1]:   (in /app/app/assets/stylesheets/application.css)):
+2012-02-29T02:28:52+00:00 app[web.1]:     2: <html>
+2012-02-29T02:28:52+00:00 app[web.1]:     3: <head>
+2012-02-29T02:28:52+00:00 app[web.1]:     5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+2012-02-29T02:28:52+00:00 app[web.1]:     6:   <%= javascript_include_tag "all" %>
+2012-02-29T02:28:52+00:00 app[web.1]:     4:   <title>FormPdf</title>
+2012-02-29T02:28:52+00:00 app[web.1]:     7:   <%= csrf_meta_tags %>
+2012-02-29T02:28:52+00:00 app[web.1]:     8: </head>
+2012-02-29T02:28:52+00:00 app[web.1]:   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3219924005713766469_44272500'
+2012-02-29T02:28:52+00:00 app[web.1]:   app/controllers/home_controller.rb:3:in `index'
+2012-02-29T02:28:52+00:00 app[web.1]: 
+2012-02-29T02:28:52+00:00 app[web.1]: 
+2012-02-29T02:28:52+00:00 app[web.1]: cache: [GET /] miss
+2012-02-29T02:28:52+00:00 heroku[router]: GET sharp-fire-6329.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=2713ms status=500 bytes=643
+2012-02-29T02:28:52+00:00 app[web.1]: cache: [GET /favicon.ico] miss, store
+2012-02-29T02:28:52+00:00 heroku[router]: GET sharp-fire-6329.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=38ms status=200 bytes=0
