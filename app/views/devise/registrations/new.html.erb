@@ -1,0 +1,15 @@
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :class => 'well span3', :style => "position:absolute; left:40%;"}) do |f| %>
+  <%= devise_error_messages! %>
+	<h3>Sign Up for Form PDF</h3> <br />
+  <div><!-- <%= f.label :email %><br /> -->
+  <%= f.email_field :email, :placeholder => "Email" %></div>
+
+  <div><!--<%= f.label :password %><br /> -->
+  <%= f.password_field :password, :placeholder => "Password" %></div>
+
+  <div><!--<%= f.label :password_confirmation %><br /> -->
+  <%= f.password_field :password_confirmation, :placeholder => "Password Confirmation" %></div>
+	<br />
+  <div><%= f.submit "Sign up", :class => 'btn-primary' %></div>
+	<%= render "links" %>
+<% end %>
