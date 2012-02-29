@@ -12,7 +12,3 @@
  *= require_tree .
 */
 @import "bootstrap"
-
-h1 {
-	color:blue;
-}
