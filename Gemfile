@@ -8,7 +8,7 @@ gem 'rails', '3.2.0'
 gem 'pg'
 gem 'haml-rails'
 gem 'devise'
-gem 'bootstrap-sass'
+gem 'less-rails-bootstrap'
 
 
 # Gems used only for assets and not required
