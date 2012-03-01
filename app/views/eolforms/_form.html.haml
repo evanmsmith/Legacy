@@ -1,0 +1,136 @@
+= form_for @eolform do |f|
+  -if @eolform.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@eolform.errors.count, "error")} prohibited this eolform from being saved:"
+      %ul
+        - @eolform.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :dob
+    = f.date_select :dob
+  .field
+    = f.label :ad_street1
+    = f.text_field :ad_street1
+  .field
+    = f.label :ad_street2
+    = f.text_field :ad_street2
+  .field
+    = f.label :ad_city
+    = f.text_field :ad_city
+  .field
+    = f.label :ad_state
+    = f.text_field :ad_state
+  .field
+    = f.label :ad_zip
+    = f.number_field :ad_zip
+  .field
+    = f.label :phone_number
+    = f.text_field :phone_number
+  .field
+    = f.label :s1_agent_name
+    = f.text_field :s1_agent_name
+  .field
+    = f.label :s1_home_phone
+    = f.text_field :s1_home_phone
+  .field
+    = f.label :s1_cell_phone
+    = f.text_field :s1_cell_phone
+  .field
+    = f.label :s1_street1
+    = f.text_field :s1_street1
+  .field
+    = f.label :s1_street2
+    = f.text_field :s1_street2
+  .field
+    = f.label :s1_city
+    = f.text_field :s1_city
+  .field
+    = f.label :s1_state
+    = f.text_field :s1_state
+  .field
+    = f.label :s1_zip
+    = f.number_field :s1_zip
+  .field
+    = f.label :s1_relationship
+    = f.text_field :s1_relationship
+  .field
+    = f.label :s2_agent_name
+    = f.text_field :s2_agent_name
+  .field
+    = f.label :s2_home_phone
+    = f.text_field :s2_home_phone
+  .field
+    = f.label :s2_cell_phone
+    = f.text_field :s2_cell_phone
+  .field
+    = f.label :s2_street1
+    = f.text_field :s2_street1
+  .field
+    = f.label :s2_street2
+    = f.text_field :s2_street2
+  .field
+    = f.label :s2_city
+    = f.text_field :s2_city
+  .field
+    = f.label :s2_state
+    = f.text_field :s2_state
+  .field
+    = f.label :s2_zip
+    = f.number_field :s2_zip
+  .field
+    = f.label :s2_relationship
+    = f.text_field :s2_relationship
+  .field
+    = f.label :s3_agent_name
+    = f.text_field :s3_agent_name
+  .field
+    = f.label :s3_home_phone
+    = f.text_field :s3_home_phone
+  .field
+    = f.label :s3_cell_phone
+    = f.text_field :s3_cell_phone
+  .field
+    = f.label :s3_street1
+    = f.text_field :s3_street1
+  .field
+    = f.label :s3_street2
+    = f.text_field :s3_street2
+  .field
+    = f.label :s3_city
+    = f.text_field :s3_city
+  .field
+    = f.label :s3_state
+    = f.text_field :s3_state
+  .field
+    = f.label :s3_zip
+    = f.number_field :s3_zip
+  .field
+    = f.label :s3_relationship
+    = f.text_field :s3_relationship
+  .field
+    = f.label :statement
+    = f.text_area :statement
+  .field
+    = f.label :choice1
+    = f.text_field :choice1
+  .field
+    = f.label :choice1_comments
+    = f.text_area :choice1_comments
+  .field
+    = f.label :choice2
+    = f.text_field :choice2
+  .field
+    = f.label :choice2_comments
+    = f.text_area :choice2_comments
+  .field
+    = f.label :choice3
+    = f.text_field :choice3
+  .field
+    = f.label :choice3_comments
+    = f.text_area :choice3_comments
+  .actions
+    = f.submit 'Save'

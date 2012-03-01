@@ -1,4 +1,6 @@
 FormPdf::Application.routes.draw do
+  resources :eolforms
+
   resources :forms
 
   devise_for :users
