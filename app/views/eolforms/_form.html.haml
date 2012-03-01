@@ -5,18 +5,18 @@
       %ul
         - @eolform.errors.full_messages.each do |msg|
           %li= msg
-
+  %h3 Welcome to EOL Form Builder. Please fill out the following form.
   .field
     = f.label :name
     = f.text_field :name
   .field
-    = f.label :dob
+    %label Date of Birth
     = f.date_select :dob
   .field
-    = f.label :ad_street1
+    %p Street
     = f.text_field :ad_street1
   .field
-    = f.label :ad_street2
+    %label Street 2
     = f.text_field :ad_street2
   .field
     = f.label :ad_city
@@ -117,8 +117,12 @@
   .field
     = f.label :choice1
     = f.text_field :choice1
+  %table{:class =>"table table-striped"}
+    %tr
+      %td A. Remove artificial life support
+      %td B. Use any medically reasonable treatments
   .field
-    = f.label :choice1_comments
+    %label Comments
     = f.text_area :choice1_comments
   .field
     = f.label :choice2

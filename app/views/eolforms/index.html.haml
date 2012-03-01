@@ -1,49 +1,9 @@
-%h1 Listing eolforms
+%h1 Existing Forms
 
 %table
   %tr
     %th Name
-    %th Dob
-    %th Ad street1
-    %th Ad street2
-    %th Ad city
-    %th Ad state
-    %th Ad zip
-    %th Phone number
-    %th S1 agent name
-    %th S1 home phone
-    %th S1 cell phone
-    %th S1 street1
-    %th S1 street2
-    %th S1 city
-    %th S1 state
-    %th S1 zip
-    %th S1 relationship
-    %th S2 agent name
-    %th S2 home phone
-    %th S2 cell phone
-    %th S2 street1
-    %th S2 street2
-    %th S2 city
-    %th S2 state
-    %th S2 zip
-    %th S2 relationship
-    %th S3 agent name
-    %th S3 home phone
-    %th S3 cell phone
-    %th S3 street1
-    %th S3 street2
-    %th S3 city
-    %th S3 state
-    %th S3 zip
-    %th S3 relationship
-    %th Statement
-    %th Choice1
-    %th Choice1 comments
-    %th Choice2
-    %th Choice2 comments
-    %th Choice3
-    %th Choice3 comments
+    %th Date of Creation
     %th
     %th
     %th
@@ -51,50 +11,10 @@
   - @eolforms.each do |eolform|
     %tr
       %td= eolform.name
-      %td= eolform.dob
-      %td= eolform.ad_street1
-      %td= eolform.ad_street2
-      %td= eolform.ad_city
-      %td= eolform.ad_state
-      %td= eolform.ad_zip
-      %td= eolform.phone_number
-      %td= eolform.s1_agent_name
-      %td= eolform.s1_home_phone
-      %td= eolform.s1_cell_phone
-      %td= eolform.s1_street1
-      %td= eolform.s1_street2
-      %td= eolform.s1_city
-      %td= eolform.s1_state
-      %td= eolform.s1_zip
-      %td= eolform.s1_relationship
-      %td= eolform.s2_agent_name
-      %td= eolform.s2_home_phone
-      %td= eolform.s2_cell_phone
-      %td= eolform.s2_street1
-      %td= eolform.s2_street2
-      %td= eolform.s2_city
-      %td= eolform.s2_state
-      %td= eolform.s2_zip
-      %td= eolform.s2_relationship
-      %td= eolform.s3_agent_name
-      %td= eolform.s3_home_phone
-      %td= eolform.s3_cell_phone
-      %td= eolform.s3_street1
-      %td= eolform.s3_street2
-      %td= eolform.s3_city
-      %td= eolform.s3_state
-      %td= eolform.s3_zip
-      %td= eolform.s3_relationship
-      %td= eolform.statement
-      %td= eolform.choice1
-      %td= eolform.choice1_comments
-      %td= eolform.choice2
-      %td= eolform.choice2_comments
-      %td= eolform.choice3
-      %td= eolform.choice3_comments
+      %td= eolform.created_at
       %td= link_to 'Show', eolform
       %td= link_to 'Edit', edit_eolform_path(eolform)
-      %td= link_to 'Destroy', eolform, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to 'Delete', eolform, :confirm => 'Are you sure?', :method => :delete
 
 %br
 
